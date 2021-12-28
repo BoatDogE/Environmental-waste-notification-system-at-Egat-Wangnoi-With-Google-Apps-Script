@@ -1,0 +1,47 @@
+<!-- ## The html code of the form goes here -->
+<!-- ## This is included in the Index.html page using "include('Form')" function -->
+
+<br>
+
+<form id="myForm"  class="p-2 border border-light rounded bg-light "  onsubmit="handleFormSubmit(this)" >
+  <br>
+  <!-- Call JavaScript function "handleFormSubmit" -->
+  <p class="h4 mb-4 text-center">แบบฟอร์มบัญชีของเสีย                                  </p>
+   <p class="h4 mb-4 text-center">โรงไฟฟ้าวังน้อย  </p>
+  <div id="message"></div>
+  <input type="text" id="RecId" name="RecId" value="" style="display: none">
+
+  
+  <div class="form-group">
+    <label for="date">วันที่</label>
+   <input class="form-control datepicker" data-date-format="dd/mm/yyyy" id="date" name="date" placeholder="30/12/2564">
+  
+  </div>
+  <div class="form-group">
+    <label for="listname" >รายการ/ประเภทของเสีย</label>
+    <input type="text" class="form-control" id="listname" name="listname" placeholder="รายการ/ประเภทของเสีย" required>
+  </div>
+
+  <div class="form-group">
+    
+    <label for="volume" >ปริมาณ(กิโลกรัม/ลิตร)</label>
+    <input type="text" class="form-control" id="volume" name="volume" placeholder="ปริมาณ(กิโลกรัม/ลิตร)" required>
+  </div>
+  <div class="form-group">
+    <label for="holdtime" >ระยะเวลาครอบครอง(วัน)</label>
+    <input type="text" class="form-control" id="holdtime" name="holdtime" placeholder="ระยะเวลาครอบครอง(วัน)" required>
+  </div>
+  
+  <div class="form-group">
+    <label for="type" >ประเภท</label>
+    <input type="text" class="form-control" id="type" name="type" placeholder="ประเภท" required>
+  </div>
+  <div class="form-group">
+    <label for="volumeunit" >จำนวน</label>
+    <input type="text" class="form-control" id="volumeunit" name="volumeunit" placeholder="จำนวน" required>
+  </div>
+
+
+  <button type="submit" class="btn btn-primary">ยืนยัน</button>
+  <input class="btn btn-secondary" type="reset" value="ล้าง">
+</form>
